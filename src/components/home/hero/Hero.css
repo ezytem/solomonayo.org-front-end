@@ -1,0 +1,33 @@
+/* src/components/hero/hero.css */
+
+/* Styles specifically for the hero section */
+.hero {
+    background-image: url('/path/to/your/hero/image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b10808;
+    font-family: 'Kaushan Script', cursive;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero button {
+    padding: 1rem 2rem;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

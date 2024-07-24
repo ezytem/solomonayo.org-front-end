@@ -1,0 +1,257 @@
+
+/* Head section styles */
+.head {
+  padding: 10px 0;
+  color: #fff;
+  background-color: transparent;
+  margin-top: 35px;
+  margin-bottom: -30px;
+}
+
+.head .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-top: -55px;
+}
+
+.head .logo .company-logo {
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgb(255, 255, 255);
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+.head .social {
+  display: flex;
+  gap: 5px;
+  margin-top: 4px;
+  margin-right: 80px;
+}
+
+.head .icon {
+  margin-left: 10px;
+  color: hwb(240 91% 9%);
+  font-size: 20px; /* Fixed font size typo */
+  transition: color 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(24, 30, 30, 0.978); /* White shadow */
+}
+
+.head .icon:hover {
+  color: #b21e3e;
+}
+
+/* Header styles */
+header {
+  background-color: rgba(204, 27, 27, 0.034);
+  padding: 10px 70px;
+  margin-top: -60px; /* Move the header up */
+  z-index: 1000; /* Ensure the header is on top of other elements */
+  position: relative; /* Ensure z-index works */
+}
+
+header .flexSB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+header ul {
+  display: flex;
+  gap: 30px;
+  text-decoration: none;
+}
+
+header ul li {
+  position: relative;
+}
+
+header ul li a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.5s;
+  text-decoration: none; /* Remove underline */
+  text-align: center; /* Center-align the text */
+  font-family: Times New Roman, Times, serif; /* Italic font family */
+  font-style: normal; /* Italic font style */
+}
+
+header ul li a:hover {
+  color: #10cfbf;
+  text-decoration: none; /* Remove underline on hover */
+}
+
+header ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 248, 248);
+  list-style: none;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  min-width: 200px;
+  border-radius: 0 0 3px 3px;
+  text-decoration: none;
+}
+
+header ul li:hover .dropdown,
+header ul li .dropdown:hover {
+  display: block;
+}
+
+header ul li .dropdown li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li .dropdown li a {
+  color: #0f0e0e;
+  font-size: 14px;
+  padding: 5px 10px;
+  white-space: nowrap;
+  text-decoration: none; /* Remove underline */
+  text-align: center; /* Center-align the text */
+  font-family: 'Kaushan Script', cursive; /* Italic font family */
+  font-style: italic; /* Italic font style */
+}
+
+header ul li .dropdown li a:hover {
+  color: #b21e3e;
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.start {
+  background-color: #a1182b;
+  padding: 20px 30px;
+  color: white; /* Ensure the font color is white */
+  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+  font-weight: bold; /* Use font-weight for bold text */
+  text-decoration: none; /* Ensure links have no underline */
+  display: inline-block; /* Make it behave like a block-level element */
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
+.start a {
+  color: white; /* Ensure the link text color is white */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.toggle {
+  display: none;
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: #440505;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .mobile-nav li {
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .mobile-nav li a {
+    color: #333;
+    text-decoration: none; /* Remove underline from mobile navigation links */
+    text-align: center; /* Center-align the text */
+    font-family: 'Kaushan Script', cursive; /* Italic font family */
+    font-style: italic; /* Italic font style */
+  }
+}
+
+/* Hero section styles */
+.hero {
+  background-size: 50%; /* Scale the background image to 50% of the container's size */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 2vh; /* Adjust the height to your preference */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f0ebeb;
+  text-align: center;
+  background-color: transparent;
+  font-family: Sofia, serif, sans-serif, Noto Sans Carianl;
+  font-style: normal;
+  padding-bottom: 30px;
+  margin-top: 350px; 
+  background-color: transparent;
+}
+
+.hero-content  {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  margin-top: 200px; /* Adjust this value to move the text down */
+  font-size: 22px;
+  margin-left: -20px;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-style: italic; /* Italic font style */
+  margin-top: -250px;
+}
+
+.hero h1 {
+  color: #f1eeee;
+  margin-right: 100px;
+  font-style: italic; /* Make font italic */
+}
+
+.hero p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-style: italic; /* Make font italic */
+  text-align: center; /* Center the text */
+  font-family: Sofia, sans-serif;
+}
+
+.hero button {
+  padding: 1rem 2rem;
+  background: #460311;
+  color: white;
+  border: none;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Adjust the width as needed */
+  height: 110%; /* Increased height */
+  object-fit: cover; /* Maintain aspect ratio */
+  z-index: -1;
+  padding-bottom: 30px;
+}

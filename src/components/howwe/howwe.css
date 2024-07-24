@@ -1,0 +1,92 @@
+/* src/components/howwe.css */
+
+.howwe-section {
+  padding: 40px 20px;
+  background-color: #f7f1f1;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: -220px;
+}
+
+.howwe-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #110808;
+  font-size: 3rem;
+}
+
+.howwe-section p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .howwe-section {
+    padding: 10px 20px;
+    margin-top: 220px;
+  }
+
+  .howwe-section h2 {
+    font-size: 18px;
+  }
+
+  .howwe-section p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .howwe-section {
+    padding: 20px 10px;
+    margin-top: 170px;
+  }
+
+  .howwe-section h2 {
+    font-size: 22px;
+  }
+
+  .howwe-section p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 10vh; /* Adjusted height for smaller screens */
+    margin-top: -60px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .container {
+    gap: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.875rem;
+  }
+
+  .card a {
+    font-size: 0.875rem;
+  }
+}

@@ -1,0 +1,132 @@
+/* src/components/vision/visionobjective.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.vision-objectives-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f1eded;
+  font-family: 'Roboto', sans-serif;
+  max-height: 600px;
+  overflow-y: auto;
+  margin-top: -250px;
+  margin-bottom: 10px;
+}
+
+.vision-objectives-card {
+  max-width: 700px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-right: 30px;
+  position: relative;
+  z-index: 1;
+  margin-top: -150px;
+}
+
+.vision-objectives-card:hover {
+  box-shadow: 0 16px 32px rgba(74, 150, 250, 0.7);
+}
+
+.vision-objectives-text h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.vision-objectives-text h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 6px;
+  background: linear-gradient(to right, #72092e, #000);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.vision-objectives-text p {
+  font-size: 1rem;
+  color: #34495e;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.vision-objectives-text button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.vision-objectives-text button:hover {
+  background-color: #0056b3;
+}
+
+.vision-objectives-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 250px;
+  position: relative;
+}
+
+.vision-objectives-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 16px 32px rgba(74, 150, 250, 0.7);
+}
+
+.vision-objectives-images .image-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.vision-objectives-images .image-card {
+  height: 150px;
+  object-fit: cover;
+}
+
+.center-image {
+  margin-left: 50%;
+  margin-top: 15px;
+  z-index: 2;
+}
+
+.single-image {
+  margin-top: 1px;
+  width: 100%;
+  height: auto;
+}
+
+/* Ensure the container doesn't overflow on smaller screens */
+@media (max-width: 768px) {
+  .vision-objectives-container {
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  .vision-objectives-card {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-top: 200px;
+  }
+
+  .vision-objectives-images {
+    margin-right: 0;
+  }
+
+  .center-image {
+    margin-left: 0;
+  }
+}

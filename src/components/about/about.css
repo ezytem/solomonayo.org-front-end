@@ -1,0 +1,79 @@
+/* src/components/about/About.css */
+.about {
+  background-color: #f8f8f8;
+  margin: auto;
+  padding: 8rem 1rem 0 1rem;
+  width: 100%;
+   margin-top: -100px;
+  margin-bottom: 2px;
+}
+
+.about .container {
+  width: 1240px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: -250px;
+}
+
+.about h2 {
+  font-size: 3rem;
+  margin-top: 60px;
+  margin-bottom: -20px;
+
+}
+
+.about .col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.about .col-2 p:first-of-type {
+  margin: 2rem 0;
+}
+
+.about .col-2 p:nth-child(4) {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.about button {
+  margin-top: 1rem;
+}
+
+.about-image {
+  width: 100%;
+  height: 400px;
+  max-height: 500px; /* Adjust this value to control the height */
+  object-fit: cover;
+  border-radius: 8px; /* Optional: add some rounding to the corners */
+  box-shadow: 0 4px 8px rgba(0, 1, 0.6, 0.9); /* Add a black shadow */
+}
+
+@media screen and (max-width: 940px) {
+  .about .container {
+      grid-template-columns: 1fr;
+  }
+
+  .about .container {
+      width: 100%;
+  }
+
+  .about .container img {
+      padding: 0rem;
+      width: 90vw;
+      max-height: unset; /* Remove the height constraint on smaller screens */
+  }
+
+  .about .container .col-2 {
+      padding: 0;
+  }
+
+  .about button {
+      margin-bottom: 1rem;
+  }
+}

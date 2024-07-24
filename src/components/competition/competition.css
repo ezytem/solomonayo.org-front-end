@@ -1,0 +1,248 @@
+/* src/components/competition/competition.css */
+
+/* General styling for competition sections */
+.competition-section {
+  padding: 40px 20px;
+  background-color: #f7f1f1;
+  color: hsl(0, 0%, 20%);
+  margin-top: -200px;
+}
+
+/* Heading styles */
+.competition-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #d32f2f;
+}
+
+.competition-section p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* Added for button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.next-edition-button {
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.next-edition-button:hover {
+  background-color: #a91b1b;
+}
+
+/* Next Edition section specific styles */
+.next-edition-section {
+  padding: 40px 20px;
+  background-color: #f7f1f1;
+  color: #333;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: -250px;
+}
+
+.next-edition-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #d32f2f;
+}
+
+.next-edition-section h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+.next-edition-section p,
+.next-edition-section ul {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.next-edition-section ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+/* Registration form styles */
+.registration-form {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form .form-group {
+  margin-bottom: 15px;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.registration-form input,
+.registration-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Register button styles */
+.register-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #a91b1b;
+}
+
+/* Navigation links styles */
+.navigation-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navigation-links .nav-link {
+  margin: 0 10px;
+  color: #1e28b2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation-links .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Status message styles */
+.status-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #d32f2f;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .next-edition-section {
+    padding: 30px 15px;
+    margin-top: 200px;
+  }
+
+  .next-edition-section h2 {
+    font-size: 24px;
+  }
+
+  .next-edition-section p,
+  .next-edition-section ul,
+  .next-edition-section h3 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .registration-form {
+    padding: 15px;
+  }
+
+  .registration-form label {
+    font-size: 14px;
+  }
+
+  .registration-form input,
+  .registration-form select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .register-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .navigation-links .nav-link {
+    font-size: 14px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .next-edition-section {
+    padding: 20px 10px;
+    margin-top: 170px;
+  }
+
+  .next-edition-section h2 {
+    font-size: 20px;
+  }
+
+  .next-edition-section p,
+  .next-edition-section ul,
+  .next-edition-section h3 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .registration-form {
+    padding: 10px;
+  }
+
+  .registration-form label {
+    font-size: 12px;
+  }
+
+  .registration-form input,
+  .registration-form select {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .register-button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .navigation-links .nav-link {
+    font-size: 12px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
